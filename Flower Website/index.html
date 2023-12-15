@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flower Website</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="CSS/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">HappyFlowers</a>
+        <input type="checkbox" id="check">
+        <label for="check" class="icons">
+            <i class='bx bx-menu' id="menu-icon"></i>
+            <i class='bx bx-x' id="close-icon"></i>
+
+
+        </label>
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#flowers">Flowers</a>
+            <a href="#services">Services</a>
+            <a href="#feedback">Feedback</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <div class="home" id="home">
+        <h2>"Blooms Delivered, Smiles Delighted!"</h2>
+        <div class="home-text">
+            <h4 > "Welcome to HappyFlowers, where we believe that happiness is best expressed through the language of flowers."</h4>
+        </div>
+
+        <div class="home-icons">
+            <a href="account.html"><i class='bx bx-user' ></i></a>
+            <a href="fav.html"><i class='bx bx-heart' ></i></a>
+            <a href="cart.html"><i class='bx bx-cart-alt' ></i></a>
+        </div>
+    </div>
+
+    <section class="about" id="about">
+        <h2>"Nurturing Nature's Beauty: Our Floral Journey"</h2>
+
+        <p>"Welcome to our blooming paradise, where every petal tells a story and every arrangement is a work of art. Discover the beauty of nature's finest creations at our flower shop, where love and care come together in every bouquet. Whether you're celebrating a special occasion or just want to brighten someone's day, we have the perfect blossoms for every moment. Come in and let our flowers speak the language of your heart."
+        </p>
+        <div class="about-img">
+            <img src="https://images.unsplash.com/photo-1555324528-0c5948568293?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTQwfHxwaW5rJTIwZmxvd2VyJTIwYmFja2dyb3VuZHxlbnwwfHwwfHx8MA%3D%3D">
+        </div>
+
+        
+    </section>
+
+    <section class="flowers" id="flowers">
+        <h2>"Bringing the garden to your home."</h2>
+
+        <div class="box-container">
+            <div class="box">
+                <img src="https://images.unsplash.com/photo-1613542231149-63eb74d8b4ef?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTkxfHxmbG93ZXJzfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60">
+                <h5>"Purple blooms: the embodiment of elegance and grace."</h5>
+                <span>
+                    <i id="icon" onclick="likeBtn(this)" class='bx bx-heart' ></i>
+                    <i id="icon" class='bx bx-comment-detail' ></i>
+                    <i id="icon" class='bx bxs-share-alt' ></i>
+                </span>
+                <button type="button" class="btn">Add To Bouquet</button>
+            </div>
+            <div class="box">
+                <img src="https://images.unsplash.com/photo-1599180439865-2735aa19840f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzZ8fHJvc2VzfGVufDB8fDB8fHww&auto=format&fit=crop&w=400&q=60" alt="">
+                <h5>"The rose is the universal symbol of love and deep affection."</h5>
+                <span>
+                    <i id="icon" onclick="likeBtn(this)" class='bx bx-heart' ></i>
+                    <i id="icon" class='bx bx-comment-detail' ></i>
+                    <i id="icon" class='bx bxs-share-alt' ></i>
+                </span>
+                <button type="button" class="btn">Add To Bouquet</button>
+            </div>
+            <div class="box">
+                <img src="https://images.unsplash.com/photo-1587317996237-eddd7e834d84?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTE5fHxmbG93ZXJzfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60" alt="">
+                <h5>"White orchids: the epitome of elegance and purity."</h5>
+                <span>
+                    <i id="icon" onclick="likeBtn(this)" class='bx bx-heart' ></i>
+                    <i id="icon" class='bx bx-comment-detail' ></i>
+                    <i id="icon" class='bx bxs-share-alt' ></i>
+                </span>
+                <button type="button" class="btn">Add To Bouquet</button>
+            </div>
+            <div class="box">
+                <img src="https://images.unsplash.com/photo-1502977249166-824b3a8a4d6d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTU0fHxmbG93ZXJzfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60" alt="">
+                <h5>"Pink flowers: nature's way of painting the world with love."</h5>
+                <span>
+                    <i id="icon" onclick="likeBtn(this)" class='bx bx-heart' ></i>
+                    <i id="icon" class='bx bx-comment-detail' ></i>
+                    <i id="icon" class='bx bxs-share-alt' ></i>
+                </span>
+                <button type="button" class="btn">Add To Bouquet</button>
+            </div>
+            <div class="box">
+                <img src="https://images.unsplash.com/photo-1603178455924-ef33372953bb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTA5fHxmbG93ZXJzfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60" alt="">
+                <h5>"Orange flowers: the epitome of joy and exuberance."</h5>
+                <span>
+                    <i id="icon" onclick="likeBtn(this)" class='bx bx-heart' ></i>
+                    <i id="icon" class='bx bx-comment-detail' ></i>
+                    <i id="icon" class='bx bxs-share-alt' ></i>
+                </span>
+                <button type="button" class="btn">Add To Bouquet</button>
+            </div>
+            <div class="box">
+                <img src="https://images.unsplash.com/photo-1617111490936-07b47eafdcd4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDd8fGZsb3dlcnN8ZW58MHx8MHx8fDA%3D">
+                <h5>"Tulips: the graceful dancers of the spring garden."</h5>
+                <span>
+                    <i id="icon" onclick="likeBtn(this)" class='bx bx-heart' ></i>
+                    <i id="icon" class='bx bx-comment-detail' ></i>
+                    <i id="icon" class='bx bxs-share-alt' ></i>
+                </span>
+                <button type="button" class="btn">Add To Bouquet</button>
+            </div>
+            <div class="box">
+                <img src="https://images.unsplash.com/photo-1549211855-1f8ee3710fbf?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTIwfHxyb3Nlc3xlbnwwfHwwfHx8MA%3D%3D">
+                <h5>"Roses: the lovely happiest fragrance for all ."</h5>
+                <span>
+                    <i id="icon" onclick="likeBtn(this)" class='bx bx-heart' ></i>
+                    <i id="icon" class='bx bx-comment-detail' ></i>
+                    <i id="icon" class='bx bxs-share-alt' ></i>
+                </span>
+                <button type="button" class="btn">Add To Bouquet</button>
+            </div>
+            <div class="box">
+                <img src="https://images.unsplash.com/photo-1553520929-df493916da94?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NzF8fGRhaXN5JTIwZmxvd2VyfGVufDB8fDB8fHww">
+                <h5>"Daisy: the peaceful flowers of the unique garden."</h5>
+                <span>
+                    <i id="icon" onclick="likeBtn(this)" class='bx bx-heart' ></i>
+                    <i id="icon" class='bx bx-comment-detail' ></i>
+                    <i id="icon" class='bx bxs-share-alt' ></i>
+                </span>
+                <button type="button" class="btn">Add To Bouquet</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="services" id="services">
+        <h2>"Happiness Delivered, Petal by Petal."</h2>  
+
+        <div class="service-container">
+            <div class="service-box">
+                <a href="#"><i class='bx bxs-credit-card-front  bx-flashing-hover' ></i></a>
+                <h3>Secure Payment</h3>
+                <h4>Protected By Paypal</h4>
+            </div>
+            <div class="service-box">
+                <a href="#"><i class='bx bxs-cart-alt bx-fade-left-hover' ></i></a>
+                <h3>Free Shipping</h3>
+                <h4>On All Orders</h4>
+            </div>
+            <div class="service-box">
+                <a href="#"><i class='bx bxs-offer bx-spin-hover'></i></a>
+                <h3>Exciting Offers</h3>
+                <h4>On Many Orders</h4>
+            </div>
+            <div class="service-box">
+                <a href="#"><i class='bx bxs-file-jpg bx-burst-hover'></i></a>
+                <h3>Daily Updates</h3>
+                <h4>For Every Products</h4>
+            </div>
+            <div class="service-box">
+                <a href="#"><i class='bx bxs-gift bx-tada-hover'></i></a>
+                <h3>Free Gifts</h3>
+                <h4>For Special Orders</h4>
+            </div>
+            <div class="service-box">
+                <a href="#"><i class='bx bxs-door-open bx-fade-right-hover' ></i></a>
+                <h3>Door Delivery</h3>
+                <h4>For Special Occasion</h4>
+            </div>
+
+        </div>
+    </section>
+    
+    <section class="feedback" id="feedback">
+        <h2>"Your Happiness, Our Bouquets."</h2>
+
+        <div class="feedback-container">
+            <div class="feedback-box">
+                <img src="https://img.freepik.com/free-photo/young-man-with-beard-round-glasses_273609-6191.jpg" alt="">
+                <h3>John Watson</h3>
+                <p>"I absolutely love HappyFlowers! Their flowers are always fresh and beautifully arranged. The service is fantastic, and every bouquet I've ordered has brought smiles to both my face and the recipient's. A truly happy experience!"</p>           
+            </div>
+            <div class="feedback-box">
+                <img src="https://media.istockphoto.com/id/1311084168/photo/overjoyed-pretty-asian-woman-look-at-camera-with-sincere-laughter.webp?b=1&s=170667a&w=0&k=20&c=XPuGhP9YyCWquTGT-tUFk6TwI-HZfOr1jNkehKQ17g0=" >
+                <h3>Jisoo Finza</h3>
+                <p>"I had the most delightful experience shopping at HappyFlowers! The quality and freshness of the flowers were exceptional, and the arrangements were simply beautiful.I'll definitely be returning for more happy blooms!"</p>           
+            </div>
+            <div class="feedback-box">
+                <img src="https://media.istockphoto.com/id/685132237/photo/businessman-smiling-over-white-background.webp?b=1&s=170667a&w=0&k=20&c=RJ9z3i5gfdvWuirKnN2870BEve2c36OqOWFpXD0kLt8=" alt="">
+                <h3>David Wood</h3>
+                <p>"HappyFlowers exceeded my expectations! The bouquet I ordered was not only beautifully arranged but also delivered with a smile. Their attention to detail and commitment to spreading happiness is truly impressive."</p>           
+            </div>
+
+        </div>
+    </section>
+    <section class="contact" id="contact">
+        <h2>"Bringing Sunshine to Every Bouquet."</h2>
+        
+        <div class="contact-container">
+            <form action="#" method="post">
+                <input type="text" name="name" id="name" placeholder="Name" class="form-input" required>
+                <input type="email" name="email" id="email" placeholder="E-mail" class="form-input" required>
+                <textarea name="text" id="msg" rows="8" placeholder="Type Your Message..." class="form-input" required></textarea>
+                <br>
+                <button  type="submit" class="btn" value="send">Send</button>
+            </form>
+        </div>
+        
+    </section>
+
+    <section class="footer">
+        <div class="footer-container">
+            <div class="footer-box">
+                <h2>Quick Links</h2>
+                <a href="#home">Home</a><br>
+                <a href="#about">About</a> <br>
+                <a href="#flowers">Flowers</a><br>
+                <a href="#services">Services</a><br>
+                <a href="#feedback">Feedback</a><br>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="footer-box">
+                <h2>Extra Links</h2>
+                <a href="account.html">My Account</a><br>
+                <a href="cart.html">My Order</a><br>
+                <a href="fav.html">My Favorite</a>
+            </div>
+            <div class="footer-box">
+                <h2>Locations</h2>
+                <a href="#">India</a><br>
+                <a href="#">USA</a><br>
+                <a href="#">Korea</a><br>
+                <a href="#">France</a><br>
+                <a href="#">Japan</a>
+            </div>
+            <div class="footer-box">
+                <h2>Contact Info</h2>
+                <a href="#"><i class='bx bxs-phone'></i> +123-56-7890</a><br>
+                <a href="#"><i class='bx bxs-envelope'></i> happyflowers@gmail.com</a><br>
+                <a href="#"><i class='bx bxs-map' ></i> NewYork,USA</a>
+            </div>
+
+            
+        </div>
+        <p>&#169; 2023 copyright all right reserved</p>
+    </section>
+
+    
+    <script src="JS/main.js"></script>
+</body>
+</html>
