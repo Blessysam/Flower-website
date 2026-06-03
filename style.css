@@ -1,0 +1,391 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+body{
+    height: 100%;
+   
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 10%;
+    background: #0000007e;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+}
+.header::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #00000021;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.logo{
+    font-size: 32px;
+    color: white;
+    text-decoration: none;
+    
+}
+.navbar a{
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+    margin-left: 26px;
+}
+.navbar a:hover{
+    color: rgb(202, 0, 101);
+    cursor: pointer;
+}
+#check{
+    display: none;
+}
+
+.icons{
+    position: absolute;
+    right: 5%;
+    font-size: 26px;
+    color: white;
+    cursor: pointer;
+    display: none;
+}
+.home{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    background:  linear-gradient(rgba(243, 19, 142, 0.281),rgba(243, 19, 142, 0.281)), url(https://wallpaperaccess.com/full/1996602.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: auto;
+   
+}
+.home h2{
+    font-size: 45px;
+    text-align: center;
+    padding-top: 280px;
+   
+}
+.home-icons{
+    padding-top: 30px;
+    padding-bottom: 240px;
+}
+.home-icons a .bx{
+    color: white;
+    font-size: 32px;
+    margin-left: 20px;
+    transition: .3s;
+    
+}
+.home-icons a .bx:hover{
+    transform: translate(0,-6px);
+    color: rgb(0, 0, 0);
+}
+.about {
+    padding: 100px 0px 0px 0;
+    text-align: center;
+    background-color: rgb(241, 240, 240);
+}
+.about h2{
+    color: rgb(241, 83, 162);
+    font-size: 45px;
+}
+.about p{
+    padding: 50px 100px 300px 100px;
+    font-size: 20px;
+}
+.about-img {
+    margin-top: -20%;
+}
+.flowers{
+    padding: 100px 0px;
+    text-align: center;
+    background-color: rgb(253, 169, 228);
+    padding: 15px 9%;
+
+}
+.flowers h2{
+    padding-top: 70px;
+    padding-bottom: 30px;
+    font-size: 45px;
+}
+.flowers .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(210px,1fr));
+    gap: 15px;
+    padding-bottom: 50px;
+}
+.flowers .box-container .box{
+    box-shadow:  0 5px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    background: white;
+    text-align: center;
+    padding: 20px 10px;
+}
+.flowers .box-container .box:hover{
+    box-shadow:  0 10px 15px rgba(0, 0, 0, 0.3);
+    transform: scale(1.05);
+}
+.flowers .box-container .box img{
+    height: 200px;
+    width: 200px;
+}
+.flowers .box-container .box h5{
+    color: rgb(87, 86, 86);
+    font-size: 16px;
+    padding: 10px 0;
+
+}
+.flowers .box-container .box i{
+    font-size: 28px;
+    text-align: center;
+    cursor: pointer;
+}
+.flowers .box-container .box span i{
+    padding: 15px;
+}
+.flowers .box-container .box span i #icon{
+    font-size: 32px;
+    cursor: pointer;
+}
+.bx-heart{
+    color: rgb(68, 67, 67);
+    fill: transparent;
+}
+.bxs-share-alt, .bx-comment-detail{
+    color: rgb(68, 67, 67);
+}
+.bxs-heart{
+    color: red;
+}
+.flowers .box-container .box .btn{
+    padding: 8px 8px;
+    font-size: 14px;
+    background-color: pink;
+    color: black;
+    border-radius: 5px;
+    border-width: .5px;
+    border-color: grey;
+}
+.flowers .box-container .box .btn:hover{
+    background-color: black;
+    color: rgb(245, 126, 181);
+    cursor: pointer;
+    border-width: 2px;
+    border-color: rgb(245, 126, 181);
+}
+.services{
+    padding: 100px 0px;
+    text-align: center;
+    padding: 15px 9%;
+    background-color: rgb(241, 240, 240);
+}
+.services h2{
+    padding-top: 70px;
+    padding-bottom: 30px;
+    color: rgb(241, 83, 162);
+    font-size: 45px;
+}
+.services .service-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
+    gap: 40px;
+    padding-bottom: 50px;
+
+}
+.services .service-container .service-box{
+    box-shadow:  0 5px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    background: rgb(253, 169, 228);
+    text-align: center;
+    padding: 20px 10px;
+    transition: 1s;
+}
+.services .service-container .service-box:hover{
+    transform: scale(1.1);
+}
+.services .service-container .service-box i{
+    color: black;
+    font-size: 40px;
+}
+.services .service-container .service-box  h3{
+    font-size: 24px;
+}
+.feedback{
+    padding: 100px 0px;
+    text-align: center;
+    background-color: rgb(253, 169, 228);
+    padding: 15px 9%;
+}
+.feedback h2{
+    padding-top: 70px;
+    padding-bottom: 30px;
+    font-size: 45px;
+}
+.feedback .feedback-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(180px,1fr));
+    gap: 15px;
+    padding-bottom: 100px;
+}
+.feedback .feedback-container .feedback-box{
+    box-shadow:  0 5px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    background: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+.feedback .feedback-container .feedback-box img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+.feedback .feedback-container .feedback-box p{
+    text-align: justify;
+    
+}
+.feedback .feedback-container .feedback-box h3{
+    color: rgb(255, 82, 197);
+    padding: 10px 0;
+}
+.contact{
+    background: url(https://wallpaperaccess.com/full/2901936.jpg);
+    text-align: center;
+    color: rgb(255, 255, 255);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+.contact h2{
+    padding-top: 60px;
+    font-size: 45px;
+}
+.contact-container{
+    padding: 30px 40px;
+}
+.contact-container form{
+    padding: 20px 0;
+}
+.contact-container form .form-input{
+    width: 50%;
+    font-size: 16px;
+    padding: 16px 12px;
+    border-radius: 8px;
+    border: 1.3px solid gray;
+    margin-bottom: 20px;
+    background-color: rgba(253, 253, 253, 0.452);
+    
+}
+.contact-container form  .btn{
+    padding: 12px 18px;
+    background: linear-gradient(pink,rgba(255, 255, 255, 0.459));
+    color: black;
+    font-size: 21px;
+    border-radius: 5px;
+}
+.contact-container form  .btn:hover{
+    cursor: pointer;
+    background: linear-gradient(rgba(255, 255, 255, 0.459),pink);
+
+}
+.footer{
+    padding: 100px 0px;
+    text-align: center;
+    background-color: rgb(253, 169, 228);
+    padding: 15px 9%;
+}
+.footer .footer-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
+    gap: 20px;
+    padding: 50px 0;
+}
+.footer .footer-container .footer-box{
+    text-align: left;
+    padding: 30px 20px;
+}
+.footer .footer-container .footer-box h2{
+    font-size: 26px;
+    text-align: left;
+    text-decoration: underline;
+}
+.footer .footer-container .footer-box a{
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    line-height: 30px;   
+}
+.footer .footer-container .footer-box a:hover{
+    color: rgb(35, 77, 8);
+    text-decoration: underline;
+    
+}
+
+
+
+@media (max-width:992px){
+    .header{
+        padding: 20px 5%;
+    }
+    
+}
+
+
+@media (max-width:768px){
+    .icons{
+        display: inline-flex;
+    }
+    #check:checked~.icons #menu-icon{
+        display: none;
+
+    }
+    .icons #close-icon{
+        display: none;
+    }
+    #check:checked~.icons #close-icon{
+        display: block;
+    }
+    .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        height: 0;
+        background: #0000001e;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        overflow: hidden;
+        transition: .3s ease;
+    }
+    #check:checked~.navbar{
+        height: 280px;
+    }
+    .navbar a{
+        display: block;
+        font-size: 16px;
+        margin: 24px 0;
+        text-align: center;
+        margin-bottom: 20px;
+        transform: translateY(-50px);
+        transition: .3s ease;
+    }
+    #check:checked~.navbar a{
+        transform: translateY(0);
+    }
+    .flowers{
+        padding: 20px;
+        
+    }
+    
+}
+
+

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Create Account</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            box-sizing: border-box;
+    
+        }
+        .container{
+            width:100%;
+            min-height: 100vh;
+            background: rgb(252, 220, 225);
+            justify-content: center;
+            
+        }
+        .navbar{
+            width: 100%;
+            height: 50px;
+            align-items: center;
+            background-color: rgba(247, 81, 159, 0.459);
+            position: fixed;
+            justify-content: space-between;
+            padding: 0px 10px 5px 10px;
+
+        }
+        .navbar a{
+            text-decoration: none;
+            color: black;
+            display: flex;
+            margin: 0 10% 0 10%;
+            padding: 0px 10px 10px 10px;
+        }
+        .btn{
+            align-items: center;
+            float: left;
+            margin-left: 10%;
+            display: flex;
+            
+        }
+        .btn a{   
+            padding: 10px 2px;
+            font-size: 27px;
+        }
+        .btn .right{
+            color: rgb(139, 135, 135);
+        }
+        .btn .left:hover{
+            color: white;
+        }
+        .nav_icon{
+            margin-left: 90%;
+            display: flex;
+            flex-direction: row;
+        }
+        .nav_icon a{ 
+            margin: -40px;
+        }
+        .nav_icon a .bx{
+            transition: .3s;
+        }
+        .nav_icon a .bx:hover{
+            transform: translate(0,-6px);
+            color: white;
+        }
+        .logo{
+            padding: 2px 10px;
+            font-size: 32px;
+            margin-left: 35%;
+        }
+        .logo a{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+        }
+
+        ::placeholder{
+            color:  rgb(146, 145, 145);
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;                
+            border: none;
+            font-size: x-small;               
+        }
+        form{
+            padding-top: 80px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+
+            <div class="btn">
+                <a href="index.html"><i class='bx bx-left-arrow-alt left' ></i></a>
+                <span><a href="#"><i class='bx bx-right-arrow-alt right' ></i></a></span>
+            </div>
+
+            <div class="logo">
+                <a href="#">HappyFlowers</a>
+    
+            </div>
+           
+            <div class="nav_icon">
+                <a href="cart.html"><i class='bx bx-cart-alt' ></i></a>
+                <a href="fav.html"><i class='bx bx-heart' ></i></a>
+                <a href="account.html"><i class='bx bx-user' ></i></a>
+            </div>
+        </div>
+
+
+        <center>
+            <div>
+            <form>
+                <fieldset  style="width: 60%; border: none; " >
+                <fieldset style="width: 50%; background-color: white; margin: 20px;  padding: 30px;">
+                    <caption><b><h4 style="font-size: x-large; padding: 10px 10px;">Create Account</h4></b></caption>
+    
+                    <p style="font-size: medium;">Create your account for better experience.</p>
+    
+                    <br><br>
+                    <input type="text" placeholder="First Name" id="name" style="background-color: rgb(255, 255, 255);  padding: 5px 2px; width:39% ;">
+                    <input type="text" placeholder="Last Name" id="name" style="background-color: rgb(255, 255, 255);  padding: 5px 2px; width: 39%;">
+    
+                    <br><br>
+    
+                    <input type="email" placeholder="E-mail"  id="email" style="background-color: rgb(255, 255, 255); width: 80%; padding: 5px 2px;">
+    
+                    <br><br>
+    
+                    <input type="password" placeholder="Password" id="password" style="background-color: rgb(255, 255, 255);width: 80% ; padding: 5px 2px;">
+    
+                    <br><br>
+    
+                    <input type="password" placeholder="Confirm password" id="password" style=" background-color: rgb(255, 255, 255); width: 80% ; padding: 5px 2px;">
+    
+                    <br><br>
+                    
+                    <input type="checkbox" id="terms"> I accept Terms of use & Privacy policy.
+                   
+    
+                    <br><br>
+    
+                    <button type="submit" style="background-color: rgb(247, 81, 158); color: rgb(0, 0, 0); border: none; padding: 5px 2px; width: 80%; border-radius: 4px;" >Create Account</button>
+    
+                    <br><br>
+    
+    
+                    <p style="color: rgb(0, 0, 0);">Already have an account <a href="#" style="color: rgb(0, 0, 0);">Sign in</a></p>
+    
+                    
+                </fieldset>
+                
+    
+                    
+                    
+            </fieldset>
+                
+                
+            </form>
+        </div>
+    </center>
+    </div>
+
+    
+</body>
+</html>
